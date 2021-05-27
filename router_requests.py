@@ -52,3 +52,13 @@ def get_ui_language_query(ui_language, router_ip, router_netmask):
         "time_zone": "-08+1+1",
         "_daylight_time": "1",
     }
+
+
+def get_upgrade_query():
+    return {
+        "file": '; filename="pwned.bin"',
+        "submit_button": "Upgrade",
+        "change_action": "",
+        "action": "",
+        "process": ""
+    }
