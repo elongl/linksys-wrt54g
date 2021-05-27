@@ -14,7 +14,7 @@
 - Start the reverse shell server within the exploit itself.
 
 
-### Wonders & Thoughts
+### Unsolved Mysteries
 - If `ui_language` is stored in nvram (Non-Volatile Memory), how come it fixes itself upon reboot?
 
 
