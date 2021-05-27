@@ -1,17 +1,14 @@
 import ipaddress
 
 
-def get_ui_language_query(ui_language, router_ip, router_netmask):
-    router_iface = ipaddress.ip_interface(f'{router_ip}/{router_netmask}')
-    _router_ip = ipaddress.ip_interface(f'{router_ip}/{router_netmask}')
-    _router_netmask = router_iface.netmask
+def get_ui_language_query(ui_language):
     return {
         "ui_language": ui_language,
-        "lan_ipaddr_0": _router_ip.packed[0],
-        "lan_ipaddr_1": _router_ip.packed[1],
-        "lan_ipaddr_2": _router_ip.packed[2],
-        "lan_ipaddr_3": _router_ip.packed[3],
-        "lan_netmask": router_netmask,
+        "lan_ipaddr_0": "192",
+        "lan_ipaddr_1": "169",
+        "lan_ipaddr_2": "1",
+        "lan_ipaddr_3": "100",
+        "lan_netmask": "255.255.255.0",
         "submit_button": "index",
         "change_action": "gozila_cgi",
         "submit_type": "language",
