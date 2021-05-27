@@ -1,7 +1,7 @@
 import ipaddress
 
 
-def get_ui_language_request_query(ui_language, router_ip, router_netmask):
+def get_ui_language_query(ui_language, router_ip, router_netmask):
     router_iface = ipaddress.ip_interface(f'{router_ip}/{router_netmask}')
     _router_ip = ipaddress.ip_interface(f'{router_ip}/{router_netmask}')
     _router_netmask = router_iface.netmask
